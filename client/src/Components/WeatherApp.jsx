@@ -31,7 +31,7 @@ function WeatherApp() {
 
   const fetchWeather = (cityName) => {
     const apiKey = 'ac73eb7595344fcd99643605242110';
-    const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=7&aqi=yes&alerts=no`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=7&aqi=yes&alerts=no`;
 
     fetch(apiUrl)
       .then((response) => {
